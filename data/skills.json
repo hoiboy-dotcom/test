@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Power Slash",
+    "type": "attack",
+    "levelReq": 1,
+    "manaCost": 10,
+    "damage": 50,
+    "cooldown": 5,
+    "range": 100,
+    "description": "A powerful slash attack.",
+    "image": "power_slash.png"
+  },
+  {
+    "id": 2,
+    "name": "Healing Light",
+    "type": "heal",
+    "levelReq": 3,
+    "manaCost": 20,
+    "heal": 100,
+    "cooldown": 10,
+    "range": 0,
+    "description": "Heals yourself.",
+    "image": "healing.png"
+  },
+  {
+    "id": 3,
+    "name": "Fireball",
+    "type": "attack",
+    "levelReq": 5,
+    "manaCost": 30,
+    "damage": 75,
+    "cooldown": 8,
+    "range": 200,
+    "description": "Launches a fireball.",
+    "image": "fireball.png"
+  },
+  {
+    "id": 4,
+    "name": "Ice Arrow",
+    "type": "attack",
+    "levelReq": 7,
+    "manaCost": 25,
+    "damage": 60,
+    "cooldown": 6,
+    "range": 250,
+    "description": "Shoots an ice arrow.",
+    "image": "ice_arrow.png"
+  },
+  {
+    "id": 5,
+    "name": "Lightning Strike",
+    "type": "attack",
+    "levelReq": 10,
+    "manaCost": 50,
+    "damage": 120,
+    "cooldown": 15,
+    "range": 300,
+    "description": "Calls down lightning.",
+    "image": "lightning.png"
+  }
+]

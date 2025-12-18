@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Golden Invasion",
+    "type": "invasion",
+    "monsterId": 5,
+    "count": 10,
+    "duration": 300,
+    "interval": 1800,
+    "nextSpawn": null,
+    "active": false
+  },
+  {
+    "id": 2,
+    "name": "Goblin Horde",
+    "type": "invasion",
+    "monsterId": 1,
+    "count": 20,
+    "duration": 600,
+    "interval": 900,
+    "nextSpawn": null,
+    "active": false
+  }
+]

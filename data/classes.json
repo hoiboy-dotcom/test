@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "name": "Dark Knight",
+    "startingStats": {
+      "strength": 20,
+      "agility": 15,
+      "vitality": 25,
+      "energy": 10
+    },
+    "startingItems": [
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "image": "dark_knight.gif"
+  },
+  {
+    "id": 2,
+    "name": "Elf",
+    "startingStats": {
+      "strength": 15,
+      "agility": 25,
+      "vitality": 20,
+      "energy": 15
+    },
+    "startingItems": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "image": "elf.gif"
+  },
+  {
+    "id": 3,
+    "name": "Wizard",
+    "startingStats": {
+      "strength": 10,
+      "agility": 15,
+      "vitality": 20,
+      "energy": 30
+    },
+    "startingItems": [
+      4,
+      5
+    ],
+    "image": "wizard.gif"
+  },
+  {
+    "id": 4,
+    "name": "Summoner",
+    "startingStats": {
+      "strength": 12,
+      "agility": 18,
+      "vitality": 22,
+      "energy": 25
+    },
+    "startingItems": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "image": "summoner.png"
+  }
+]

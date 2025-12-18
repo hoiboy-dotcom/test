@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Bronze Sword",
+    "type": "weapon",
+    "rarity": "common",
+    "level": 1,
+    "dropRate": 10,
+    "width": 1,
+    "height": 1,
+    "image": "sword.png",
+    "stats": {
+      "strength": 5,
+      "damage": "15-25"
+    },
+    "description": "A basic bronze sword.",
+    "stackable": false
+  },
+  {
+    "id": 2,
+    "name": "Leather Armor",
+    "type": "armor",
+    "rarity": "common",
+    "level": 1,
+    "dropRate": 15,
+    "width": 2,
+    "height": 2,
+    "image": "armor.png",
+    "stats": {
+      "vitality": 5,
+      "defense": 10
+    },
+    "description": "Simple leather armor.",
+    "stackable": false
+  },
+  {
+    "id": 3,
+    "name": "Cloth Helm",
+    "type": "helm",
+    "rarity": "common",
+    "level": 1,
+    "dropRate": 20,
+    "width": 1,
+    "height": 1,
+    "image": "helm.png",
+    "stats": {
+      "vitality": 2,
+      "defense": 5
+    },
+    "description": "A basic cloth helm.",
+    "stackable": false
+  },
+  {
+    "id": 4,
+    "name": "HP Potion",
+    "type": "potion",
+    "rarity": "common",
+    "level": 1,
+    "dropRate": 40,
+    "width": 1,
+    "height": 1,
+    "image": "potion_red.png",
+    "stats": {
+      "heal": 50
+    },
+    "description": "Restores 50 HP.",
+    "stackable": true
+  },
+  {
+    "id": 5,
+    "name": "MP Potion",
+    "type": "potion",
+    "rarity": "common",
+    "level": 1,
+    "dropRate": 40,
+    "width": 1,
+    "height": 1,
+    "image": "potion_blue.png",
+    "stats": {
+      "mana": 30
+    },
+    "description": "Restores 30 MP.",
+    "stackable": true
+  },
+  {
+    "id": 6,
+    "name": "Leather Gloves",
+    "type": "gloves",
+    "rarity": "common",
+    "level": 1,
+    "dropRate": 25,
+    "width": 1,
+    "height": 1,
+    "image": "gloves.png",
+    "stats": {
+      "agility": 2,
+      "defense": 3
+    },
+    "description": "Basic leather gloves.",
+    "stackable": false
+  }
+]

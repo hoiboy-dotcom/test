@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MU Online 2D Clone - Modular</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">MU Online 2D</div>
+            <div class="game-info">
+                <div class="server-info">
+                    <div class="status-indicator"></div>
+                    <span>Local Server - Online</span>
+                </div>
+                <div class="control-panel">
+                    <div class="panel-menu">
+                        <button class="menu-btn" id="panelMenuBtn">📊 Panels</button>
+                        <div class="menu-dropdown" id="panelMenu">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="editor-menu">
+                        <button class="btn btn-editor" id="editorMenuBtn">🛠️ Editors</button>
+                        <div class="editor-dropdown" id="editorDropdown">
+                            <div class="editor-menu-item" id="openItemEditor">📦 Item Editor</div>
+                            <div class="editor-menu-item" id="openCharacterEditor">👤 Character Editor</div>
+                            <div class="editor-menu-item" id="openMonsterEditor">👹 Monster Editor</div>
+                            <div class="editor-menu-item" id="openSkillEditor">✨ Skill Editor</div>
+                            <div class="editor-menu-item" id="openEventEditor">🎭 Event Editor</div>
+                        </div>
+                    </div>
+                    <button class="btn" id="saveGame">💾 Save</button>
+                    <button class="btn" id="loadGame">📂 Load</button>
+                    <button class="btn btn-primary" id="newGame">🔄 New</button>
+                </div>
+            </div>
+            <div class="event-timer" id="eventTimer">
+                <div class="event-title">⚔️ GOLDEN INVASION ⚔️</div>
+                <div class="event-countdown" id="eventCountdown">00:05:00</div>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <div class="game-world">
+                <canvas id="gameCanvas"></canvas>
+                <!-- Panels will be generated dynamically -->
+            </div>
+        </div>
+        
+        <!-- Editor Windows -->
+        <div class="editor-window" id="itemEditorWindow">
+            <div class="panel-header">
+                <h3>📦 Item Editor</h3>
+                <div class="panel-controls">
+                    <button class="panel-btn close-btn">✕</button>
+                </div>
+            </div>
+            <div class="editor-tabs">
+                <button class="editor-tab active" data-tab="create">Create Item</button>
+                <button class="editor-tab" data-tab="edit">Edit Item</button>
+                <button class="editor-tab" data-tab="list">Item List</button>
+            </div>
+            <div class="editor-content">
+                <!-- Tab contents will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="editor-window" id="characterEditorWindow">
+            <div class="panel-header">
+                <h3>👤 Character Editor</h3>
+                <div class="panel-controls">
+                    <button class="panel-btn close-btn">✕</button>
+                </div>
+            </div>
+            <div class="editor-tabs">
+                <button class="editor-tab active" data-tab="stats">Stats</button>
+                <button class="editor-tab" data-tab="appearance">Appearance</button>
+            </div>
+            <div class="editor-content">
+                <!-- Tab contents will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="editor-window" id="monsterEditorWindow">
+            <div class="panel-header">
+                <h3>👹 Monster Editor</h3>
+                <div class="panel-controls">
+                    <button class="panel-btn close-btn">✕</button>
+                </div>
+            </div>
+            <div class="editor-tabs">
+                <button class="editor-tab active" data-tab="create">Create</button>
+                <button class="editor-tab" data-tab="edit">Edit</button>
+                <button class="editor-tab" data-tab="spawn">Spawn</button>
+                <button class="editor-tab" data-tab="image">Image</button>
+            </div>
+            <div class="editor-content">
+                <!-- Tab contents will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="editor-window" id="skillEditorWindow">
+            <div class="panel-header">
+                <h3>✨ Skill Editor</h3>
+                <div class="panel-controls">
+                    <button class="panel-btn close-btn">✕</button>
+                </div>
+            </div>
+            <div class="editor-tabs">
+                <button class="editor-tab active" data-tab="create">Create</button>
+                <button class="editor-tab" data-tab="edit">Edit</button>
+                <button class="editor-tab" data-tab="list">List</button>
+            </div>
+            <div class="editor-content">
+                <!-- Tab contents will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="editor-window" id="eventEditorWindow">
+            <div class="panel-header">
+                <h3>🎭 Event Editor</h3>
+                <div class="panel-controls">
+                    <button class="panel-btn close-btn">✕</button>
+                </div>
+            </div>
+            <div class="editor-tabs">
+                <button class="editor-tab active" data-tab="create">Create</button>
+                <button class="editor-tab" data-tab="edit">Edit</button>
+                <button class="editor-tab" data-tab="schedule">Schedule</button>
+            </div>
+            <div class="editor-content">
+                <!-- Tab contents will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Tooltip and Notifications -->
+        <div class="tooltip" id="itemTooltip"></div>
+        <div class="notification" id="notification">
+            <div class="notification-text" id="notificationText"></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
