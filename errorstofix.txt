@@ -1,0 +1,1 @@
+panel button not work,ui panels wont save after reload page,chat config not save autofight not save. img wont show on monster char items maybe cant see img in inventotrry too  rework the img gif loading
